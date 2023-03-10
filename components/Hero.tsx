@@ -32,12 +32,12 @@ export default function Hero({}: Props) {
         <h2 className="pb-2 text-sm uppercase tracking-[15px] text-gray-500">
           AI Prompt engineer
         </h2>
-        <h1>
+        <h2>
           <span className="px-10 text-5xl font-semibold lg:text-6xl">
             {text}
             <Cursor cursorColor="#ff25e2" />
           </span>
-        </h1>
+        </h2>
         <div>
           <Link href="#about">
             <button className="heroButton">About</button>

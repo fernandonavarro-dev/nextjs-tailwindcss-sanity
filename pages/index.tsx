@@ -1,3 +1,4 @@
+import About from 'components/About'
 import Header from 'components/Header'
 import Hero from 'components/Hero'
 import IntroTemplate from 'intro-template'
@@ -14,6 +15,10 @@ export default function IndexPage() {
 
       <section id="hero" className="snap-center">
         <Hero />
+      </section>
+
+      <section id="about" className="snap-center">
+        <About />
       </section>
     </div>
   )
