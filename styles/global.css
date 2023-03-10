@@ -12,3 +12,9 @@ body {
   -webkit-font-smoothing: antialiased;
   margin: 0;
 }
+
+@layer components {
+  .heroButton {
+    @apply rounded-full border border-[#242424] px-6 py-6 text-sm tracking-widest text-gray-500 transition-all hover:border-[#ff25e2]/40 hover:text-[#ff25e2]/40;
+  }
+}

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
@@ -24,7 +25,7 @@ export default function Hero({}: Props) {
         src="https://media.discordapp.net/attachments/1068307172158619720/1083607143820824586/IMG-20200906-WA0057.jpg?width=377&height=502"
         alt=""
       />
-      <div>
+      <div className="z-20">
         <h2 className="pb-2 text-sm uppercase tracking-[15px] text-gray-500">
           React Developer
         </h2>
@@ -32,11 +33,28 @@ export default function Hero({}: Props) {
           AI Prompt engineer
         </h2>
         <h1>
-          <span className="scroll-px-10 text-5xl font-semibold lg:text-6xl">
+          <span className="px-10 text-5xl font-semibold lg:text-6xl">
             {text}
+            <Cursor cursorColor="#ff25e2" />
           </span>
-          <Cursor cursorColor="#F7AB0A" />
         </h1>
+        <div>
+          <Link href="#about">
+            <button className="heroButton">About</button>
+          </Link>
+          <Link href="#experience">
+            <button className="heroButton">Experience</button>
+          </Link>
+          <Link href="#skills">
+            <button className="heroButton">Skills</button>
+          </Link>
+          <Link href="#projects">
+            <button className="heroButton">Projects</button>
+          </Link>
+          <Link href="contact">
+            <button className="heroButton">Contact</button>
+          </Link>
+        </div>
       </div>
     </div>
   )
