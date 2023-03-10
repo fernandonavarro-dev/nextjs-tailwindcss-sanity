@@ -1,10 +1,15 @@
+import Header from 'components/Header'
 import IntroTemplate from 'intro-template'
+import Head from 'next/head'
 
 export default function IndexPage() {
   return (
     <>
-      {/* Start something new 💖 */}
-      <IntroTemplate />
+      <Head>
+        <title>Fernando Navarro Portfolio</title>
+      </Head>
+
+      <Header />
     </>
   )
 }
