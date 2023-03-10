@@ -27,7 +27,7 @@ export default function Hero({}: Props) {
       />
       <div className="z-20">
         <h2 className="pb-2 text-sm uppercase tracking-[15px] text-gray-500">
-          React Developer
+          React.js Developer
         </h2>
         <h2 className="pb-2 text-sm uppercase tracking-[15px] text-gray-500">
           AI Prompt engineer

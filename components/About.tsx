@@ -33,7 +33,7 @@ export default function About({}: Props) {
         <h4 className="text-4xl font-semibold">A bit about me</h4>
         <p className="text-sm">
           I'm Fernando, graduated from UC Berkeley with 3.55 GPA and have over
-          two years of experience as the lead developer for an ecommerce
+          two years of experience as a react/next.js developer for an ecommerce
           business with thousands of fulfilled orders and satisfied customers.
           Whether I'm designing intuitive user interfaces, optimizing
           application performance, or troubleshooting complex bugs, I bring a
@@ -42,9 +42,9 @@ export default function About({}: Props) {
           developing interactive and engaging web applications that deliver real
           value to users. I believe new technologies should be embraced, and as
           such, I am utilizing AI tools daily to improve my prompt engineering
-          and supercharge my capabilities. I'm always looking for opportunities
-          to work with talented developers and designers to create exceptional
-          web experiences.
+          and supercharge my capabilities. Always looking for opportunities to
+          work with talented developers and designers to create exceptional web
+          experiences.
         </p>
       </div>
     </motion.div>
