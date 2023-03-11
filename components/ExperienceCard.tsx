@@ -1,3 +1,10 @@
+import {
+  SiJavascript,
+  SiMongodb,
+  SiNextdotjs,
+  SiReact,
+  SiTailwindcss,
+} from '@icons-pack/react-simple-icons'
 import { motion } from 'framer-motion'
 import React from 'react'
 
@@ -5,7 +12,7 @@ type Props = {}
 
 export default function ExperienceCard({}: Props) {
   return (
-    <article>
+    <article className="flex w-[500px] flex-shrink-0 cursor-pointer snap-center flex-col items-center space-y-7 overflow-hidden rounded-lg bg-[#292929] p-10 opacity-40 transition-opacity duration-200 hover:opacity-100 md:w-[600px] xl:w-[900px]">
       <motion.img
         initial={{
           y: -100,
@@ -22,9 +29,15 @@ export default function ExperienceCard({}: Props) {
         <h4 className="text-4xl font-light">
           React.js Developer - Internal Apps
         </h4>
-        <p className="my-2 flex space-x-2">Just Click MX</p>
-        <div>{/* Tech used */}</div>
-        <p>Started work... - Ended</p>
+        <p className="mt-1 text-2xl font-bold">JUST CLICK MX</p>
+        <div className="my-2 flex space-x-2">
+          <SiJavascript size={40} color="default" className="rounded-full" />
+          <SiReact size={40} color="default" className="rounded-full" />
+          <SiNextdotjs size={40} color="default" className="rounded-full" />
+          <SiTailwindcss size={40} color="default" className="rounded-full" />
+          <SiMongodb size={40} color="default" className="rounded-full" />
+        </div>
+        <p className="py-5 uppercase text-gray-300">Started work... - Ended</p>
 
         <ul className="ml-5 list-disc space-y-4 text-lg">
           <li>Summary</li>
