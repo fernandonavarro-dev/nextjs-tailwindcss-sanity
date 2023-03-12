@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 
@@ -40,6 +41,7 @@ export default function Header({}: Props) {
             className="rounded-full hover:bg-[#ff25e2]/20"
           />
         </motion.div>
+        {/* <Link href="#contact"> */}
         <motion.div
           className="flex cursor-pointer flex-row items-center text-gray-300"
           initial={{
@@ -71,6 +73,7 @@ export default function Header({}: Props) {
             Get in touch
           </p>
         </motion.div>
+        {/* </Link> */}
       </div>
     </header>
   )
