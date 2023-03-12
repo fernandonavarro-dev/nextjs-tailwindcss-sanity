@@ -1,4 +1,6 @@
 import {
+  SiDigitalocean,
+  SiGithub,
   SiJavascript,
   SiMongodb,
   SiNextdotjs,
@@ -12,7 +14,7 @@ type Props = {}
 
 export default function ExperienceCard({}: Props) {
   return (
-    <article className="flex w-[500px] flex-shrink-0 cursor-pointer snap-center flex-col items-center space-y-7 overflow-hidden rounded-lg bg-[#292929] p-10 opacity-40 transition-opacity duration-200 hover:opacity-100 md:w-[600px] xl:w-[900px]">
+    <article className="flex w-[500px] flex-shrink-0 cursor-pointer snap-center flex-col items-center space-y-7 overflow-hidden rounded-lg bg-[#303030] p-10 opacity-40 transition-opacity duration-200 hover:opacity-100 md:w-[600px] xl:w-[900px]">
       <motion.img
         initial={{
           y: -100,
@@ -31,11 +33,48 @@ export default function ExperienceCard({}: Props) {
         </h4>
         <p className="mt-1 text-2xl font-bold">JUST CLICK MX</p>
         <div className="my-2 flex space-x-2">
-          <SiJavascript size={40} color="default" className="rounded-full" />
-          <SiReact size={40} color="default" className="rounded-full" />
-          <SiNextdotjs size={40} color="default" className="rounded-full" />
-          <SiTailwindcss size={40} color="default" className="rounded-full" />
-          <SiMongodb size={40} color="default" className="rounded-full" />
+          <SiJavascript
+            title="JavaScript"
+            size={40}
+            color="default"
+            className="rounded-full"
+          />
+          <SiReact
+            size={40}
+            title="React.js"
+            color="default"
+            className="rounded-full"
+          />
+          <SiNextdotjs
+            title="Next.js"
+            size={40}
+            color="black"
+            className="rounded-full"
+          />
+          <SiTailwindcss
+            title="Tailwind CSS"
+            size={40}
+            color="default"
+            className="rounded-full"
+          />
+          <SiMongodb
+            title="MongoDB"
+            size={40}
+            color="default"
+            className="rounded-full"
+          />
+          <SiGithub
+            title="Github"
+            size={40}
+            color="#999999"
+            className="rounded-full"
+          />
+          <SiDigitalocean
+            title="Digital Ocean"
+            size={40}
+            color="default"
+            className="rounded-full"
+          />
         </div>
         <p className="py-5 uppercase text-gray-300">Started work... - Ended</p>
 

@@ -28,12 +28,14 @@ export default function Header({}: Props) {
             url="https://www.linkedin.com/in/fernando-n-dev/"
             fgColor="gray"
             bgColor="transparent"
+            className="rounded-full hover:bg-[#ff25e2]/20"
           />
           <SocialIcon
-            url="https://www.linkedin.com/in/fernando-n-dev/"
+            url="https://github.com/fernandonavarro-dev"
             network="github"
             fgColor="gray"
             bgColor="transparent"
+            className="rounded-full hover:bg-[#ff25e2]/20"
           />
           {/* <SocialIcon
             url="https://www.linkedin.com/in/fernando-n-dev/"
@@ -59,12 +61,12 @@ export default function Header({}: Props) {
         >
           <SocialIcon
             url="https://www.linkedin.com/in/fernando-n-dev/"
-            className="cursor-pointer"
             network="email"
             fgColor="gray"
             bgColor="transparent"
+            className="cursor-pointer rounded-full hover:bg-[#ff25e2]/20"
           />
-          <p className="hidden text-sm uppercase text-gray-400 md:inline-flex">
+          <p className="ml-1 hidden text-sm uppercase text-gray-400 md:inline-flex">
             Get in touch
           </p>
         </motion.div>
