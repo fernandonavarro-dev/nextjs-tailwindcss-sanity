@@ -65,12 +65,14 @@ export default function Contact({}: Props) {
           <div className="flex space-x-2">
             <input
               {...register('name')}
+              required={true}
               placeholder="Name"
               className="contactFields"
               type="text"
             />
             <input
               {...register('email')}
+              required={true}
               placeholder="Email"
               className="contactFields"
               type="email"
@@ -78,6 +80,7 @@ export default function Contact({}: Props) {
           </div>
           <input
             {...register('subject')}
+            required={true}
             placeholder="Subject"
             className="contactFields"
             type="text"
@@ -85,6 +88,7 @@ export default function Contact({}: Props) {
 
           <textarea
             {...register('message')}
+            required={true}
             placeholder="Message"
             className="contactFields"
           />
