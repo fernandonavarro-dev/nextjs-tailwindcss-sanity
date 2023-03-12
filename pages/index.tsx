@@ -9,7 +9,7 @@ import Head from 'next/head'
 
 export default function IndexPage() {
   return (
-    <div className="z-0 h-screen snap-y snap-mandatory overflow-scroll bg-[rgb(36,36,36)] text-white">
+    <div className="z-0 h-screen snap-y snap-mandatory overflow-x-hidden overflow-y-scroll bg-[rgb(36,36,36)] text-white">
       <Head>
         <title>Fernando Navarro Portfolio</title>
       </Head>

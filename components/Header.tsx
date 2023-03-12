@@ -25,23 +25,20 @@ export default function Header({}: Props) {
           }}
         >
           <SocialIcon
+            title="My LinkedIn"
             url="https://www.linkedin.com/in/fernando-n-dev/"
             fgColor="gray"
             bgColor="transparent"
             className="rounded-full hover:bg-[#ff25e2]/20"
           />
           <SocialIcon
+            title="My Github"
             url="https://github.com/fernandonavarro-dev"
             network="github"
             fgColor="gray"
             bgColor="transparent"
             className="rounded-full hover:bg-[#ff25e2]/20"
           />
-          {/* <SocialIcon
-            url="https://www.linkedin.com/in/fernando-n-dev/"
-            fgColor="gray"
-            bgColor="transparent"
-          /> */}
         </motion.div>
         <motion.div
           className="flex cursor-pointer flex-row items-center text-gray-300"
@@ -60,11 +57,15 @@ export default function Header({}: Props) {
           }}
         >
           <SocialIcon
-            url="https://www.linkedin.com/in/fernando-n-dev/"
+            title="Email me"
             network="email"
             fgColor="gray"
             bgColor="transparent"
-            className="cursor-pointer rounded-full hover:bg-[#ff25e2]/20"
+            className="cursor-pointer rounded-full hover:bg-[#ff25e2]/20 hover:text-[#ff25e2]"
+            onClick={(e) => {
+              e.preventDefault
+              window.location.href = 'mailto:fn@fn-dev.com'
+            }}
           />
           <p className="ml-1 hidden text-sm uppercase text-gray-400 md:inline-flex">
             Get in touch
